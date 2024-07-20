@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
       let removeBtn = document.createElement("button");
       removeBtn.textContent = "Remove";
       removeBtn.classList.add("remove-btn");
-      removeBtn.addEventListener("onclick", function(){
+      removeBtn.addEventListener("click", function(){
         taskList.removeChild(task);
       });
       task.appendChild(removeBtn);
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   // Attach Event Listeners:
-  addButton.addEventListener("onclick", addTask);
+  addButton.addEventListener("click", addTask);
   taskInput.addEventListener("keypress", function(event){
     if (event.key === 'Enter') {
       addTask();
